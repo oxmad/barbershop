@@ -6,3 +6,11 @@
   font-style: normal;
   font-weight: normal;
 }
+
+@font-face {
+  font-family: "PTSansNarrowBold";
+  src: url("../fonts/PTSansNarrowBold/ptsansnarrowbold.woff") format("woff"),
+  url("../fonts/PTSansNarrowBold/ptsansnarrowbold.woff2") format("woff2"),
+  font-style: normal;
+  font-weight: normal;
+}

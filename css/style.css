@@ -8,7 +8,8 @@ body {
 }
 
 .container {
-  width: 960px;
+  padding: 0;
+  width: 940px;
   margin: 0 auto;
 }
 
@@ -64,16 +65,13 @@ header {
 }
 
 .first-section__item {
+  box-sizing: border-box;
   display: inline-block;
-  width: 255px;
-  text-align: center;
+  width: 300px;
   color: white;
-  margin-right: 40px;
   vertical-align: top;
-}
-
-.first-section__item:last-child {
-  margin-right: 10px;
+  padding: 0 15px;
+  padding-left: 0;
 }
 
 .first-section__title{
@@ -82,8 +80,229 @@ header {
 }
 
 .first-section__text {
+  line-height: 1.75;
   font-size: 14px;
-  margin-top: 27px;
+  margin-top: 20px;
+}
+
+.news-photo {
+  display: block;
+  margin-top: 70px;
+  width: 940px;
+  height: 420px;
+  background: url("../img/separator.png") no-repeat center,
+  url("../img/s-sector.jpeg");
+}
+
+.news-photo__news {
+  height: 420px;
+  margin-left: 80px;
+  float: left;
+}
+
+.news-photo__title {
+  margin-top: 55px;
+  font-size: 30px;
+}
+
+.news-photo__text {
+  width: 350px;
+  font-size: 14px;
+  line-height: 1.75;
+  margin-bottom: -10px;
+}
+
+.news-photo__date {
+  font-size: 14px;
+  text-transform: lowercase;
+  margin-bottom: 4px;
+}
+
+.news-photo__photo {
+  height: 420px;
+  float: right;
+  margin-right: 80px;
+}
+
+.news-photo__img {
+  display: block;
+  box-sizing: border-box;
+  width: 300px;
+  border: 7px solid #fff;
+}
+
+.news-photo__button {
+  display: inline-block;
+  width: 140px;
+  line-height: 40px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  background: black;
+  margin-right: 17px;
+  margin-top: 38px;
+}
+
+.contacts-visit {
+  display: block;
+  margin-top: 35px;
+  width: 940px;
+  height: 435px;
+  background: url("../img/separator2.png") no-repeat center,
+  url("../img/sector3.png");
+}
+
+.contacts-visit__contacts {
+  margin-left: 80px;
+  float: left;
+}
+
+.contacts-visit__title{
+  margin-top: 55px;
+}
+
+.contacts-visit__text {
+  line-height: 1.75;
+}
+
+.contacts-visit__button {
+  display: inline-block;
+  width: 140px;
+  line-height: 40px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  background: black;
+  margin: 10px 20px 0 0;
+}
+
+.contacts-visit__visit {
+  display: block;
+  margin-right: 80px;
+  width: 300px;
+  float: right;
+}
+
+.form__input {
+  box-sizing: border-box;
+  font-family: "PTSansNarrow", sans-serif;
+  font-weight: bold;
+  padding-left: 15px;
+  color: #706f6d;
+  width: 140px;
+  line-height: 36px;
+  border: 2px solid black;
+  background: none;
+  margin-right: 5px;
+}
+
+.form__input:nth-child(2) {
+  margin-right: 0;
+}
+
+.form__input:nth-child(4) {
+  margin-right: 0;
+}
+
+.form__text-block {
+  display: table;
+  width: 300px;
+  margin: 15px 0;
+}
+
+.form__text {
+  display: table-cell;
+  padding-left: 20px;
+  width: 150px;
+}
+
+.form__button {
+  margin-top: 15px;
+  padding: 0;
+  width: 288px;
+  height: 45px;
+  font-family: "PTSansNarrow", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #fff;
+  background-color: black;
+  border: none;
+}
+
+.footer {
+  padding-top: 60px;
+  height: 130px;
+  width: auto;
+  line-height: 8px;
+  background: url("../img/footer_bg.jpeg");
+  color: #fff;
+}
+
+.footer__contacts {
+  display: inline-block;
+  width: 400px;
+
+}
+
+.footer__link {
+  color: #fff;
+}
+
+.footer__share {
+  display: inline-block;
+  width: 140px;
+  vertical-align: top;
+  text-align: center;
+}
+.footer__dev {
+  display: inline-block;
+  width: 140px;
+  float: right;
+  text-align: center;
+}
+
+.footer__share__box {
+  width: 140px;
+  margin-left: -1px;
+}
+
+.footer__share-vk {
+  background: url("../img/vk.png") no-repeat;
+  background-position: 50% 50%;
+}
+
+.footer__share-fb {
+  background: url("../img/facebook.png") no-repeat;
+  background-position: 50% 50%;
+}
+
+.footer__share-inst {
+  background: url("../img/instagram.png") no-repeat;
+  background-position: 50% 50%;
+}
+
+.soc-button {
+  display: inline-block;
+  width: 41px;
+  height: 41px;
+  margin-right: 5px;
+  background-color: black;
+}
+
+.soc-button:nth-child(3) {
+  margin-right: 0;
+}
+
+.footer__dev__about {
+  display: inline-block;
+  width: 140px;
+  line-height: 41px;
+  text-decoration: none;
+  color: white;
+  background-color: black;
 }
 
 .clearfix::after {
