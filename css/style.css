@@ -13,7 +13,7 @@ body {
   margin: 0 auto;
 }
 
-header {
+.index__header {
   padding: 0;
   width: 960px;
   height: 70px;
@@ -21,8 +21,7 @@ header {
 }
 
 .index-nav {
-  padding: 27px 0 0 10px;
-  margin-left: 20px;
+  padding: 27px 0 0 0;
 }
 .menu{
   padding: 0;
@@ -33,18 +32,25 @@ header {
   float: left;
   display: block;
   vertical-align: middle;
-  margin-right: 40px;
 }
 
 .menu__link {
   text-decoration: none;
   font-size: 16px;
   color: white;
+  padding: 25px 20px;
+}
+
+.menu__link:hover {
+  background-color: #242424;
+}
+
+.login__button {
+  padding-left: 40px;
 }
 
 .menu__item--login {
   float:right;
-  margin-right: 31px;
   position: relative;
 }
 
@@ -55,15 +61,15 @@ header {
   height: 14px;
   background: url("../img/index_login.png") no-repeat;
   position: absolute;
-  left: -30px;
-  top: 3px;
+  left: 14px;
+  top: 2px;
 }
 
 .bg-section {
   display: block;
   height: 1490px;
   background: url("../img/index_bg.jpeg") no-repeat center top;
-  background-position: -335px -32px;
+  background-size: auto;
 }
 
 .advantages {
@@ -269,6 +275,7 @@ header {
   color: #fff;
   background-color: black;
   border: none;
+  cursor: pointer;
 }
 
 .footer {
@@ -333,17 +340,18 @@ header {
   background-color: black;
 }
 
-.soc-button:nth-child(3) {
-  margin-right: 0;
+.button--standard:hover,
+.form__button:hover,
+.soc-button:hover {
+  background-color: #663d15;
 }
 
-.footer__dev__about {
-  display: inline-block;
-  width: 140px;
-  line-height: 41px;
-  text-decoration: none;
-  color: white;
-  background-color: black;
+.form__input:hover {
+  border-color: #663d15;
+}
+
+.soc-button:nth-child(3) {
+  margin-right: 0;
 }
 
 .clearfix::after {
