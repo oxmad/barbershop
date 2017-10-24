@@ -36,16 +36,27 @@ header {
   margin-right: 40px;
 }
 
-.login__link,
 .menu__link {
   text-decoration: none;
   font-size: 16px;
   color: white;
 }
 
-.login {
+.menu__item--login {
   float:right;
   margin-right: 31px;
+  position: relative;
+}
+
+.menu__item--login::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url("../img/index_login.png") no-repeat;
+  position: absolute;
+  left: -30px;
+  top: 3px;
 }
 
 .bg-section {
@@ -55,34 +66,39 @@ header {
   background-position: -335px -32px;
 }
 
-.first-section {
+.advantages {
   text-align: center;
 }
 
-.first-section__logo {
-  margin-top: 60px;
-  margin-bottom: 60px;
+.advantages__logo {
+  margin: 0 auto;
+  padding: 60px 0 80px 0;
+  width: 371px;
+  height: 155px;
+  background: url("../img/index-logo.png") no-repeat center;
 }
 
-.first-section__item {
+.advantages__item {
   box-sizing: border-box;
   display: inline-block;
   width: 300px;
   color: white;
   vertical-align: top;
-  padding: 0 15px;
-  padding-left: 0;
 }
 
-.first-section__title{
+.advantages__title{
+  margin: 0;
   font-size: 30px;
-  margin-bottom: 13px;
+  padding-bottom: 50px;
+  background: url("../img/index__shape.png") no-repeat;
+  background-position: center 50px;
 }
 
-.first-section__text {
+.advantages__text {
   line-height: 1.75;
+  padding: 20px 10px 0 10px;
   font-size: 14px;
-  margin-top: 20px;
+  margin: 0;
 }
 
 .news-photo {
@@ -95,33 +111,37 @@ header {
 }
 
 .news-photo__news {
-  height: 420px;
-  margin-left: 80px;
+  padding: 55px 40px 0 80px;
   float: left;
 }
 
 .news-photo__title {
-  margin-top: 55px;
+  margin: 0;
+  padding-bottom: 25px;
   font-size: 30px;
 }
 
 .news-photo__text {
+  margin: 0;
   width: 350px;
   font-size: 14px;
   line-height: 1.75;
-  margin-bottom: -10px;
 }
 
 .news-photo__date {
+  margin: 0;
+  padding: 5px 0 24px;
   font-size: 14px;
   text-transform: lowercase;
-  margin-bottom: 4px;
+}
+
+.news-photo__date:nth-child(2) {
+  padding-bottom: 0px;
 }
 
 .news-photo__photo {
-  height: 420px;
   float: right;
-  margin-right: 80px;
+  padding:55px 80px 0 72px;
 }
 
 .news-photo__img {
@@ -129,40 +149,57 @@ header {
   box-sizing: border-box;
   width: 300px;
   border: 7px solid #fff;
+  margin-bottom: 38px;
 }
 
-.news-photo__button {
+.button--standard {
   display: inline-block;
   width: 140px;
-  line-height: 40px;
+  line-height: 42px;
   text-decoration: none;
   text-align: center;
   font-size: 14px;
   color: #fff;
   background: black;
-  margin-right: 17px;
-  margin-top: 38px;
+}
+
+.news-photo__news__buttons {
+  padding-top: 7px;
+}
+
+.news-photo__photo__buttons {
+  font-size: 0;
+}
+
+.contacts-visit__buttons {
+  padding-top: 28px;
+  font-size: 0;
+}
+
+.button--standard:nth-child(odd) {
+  margin-right: 20px;
 }
 
 .contacts-visit {
   display: block;
   margin-top: 35px;
   width: 940px;
-  height: 435px;
   background: url("../img/separator2.png") no-repeat center,
   url("../img/sector3.png");
 }
 
 .contacts-visit__contacts {
-  margin-left: 80px;
+  padding: 55px 57px 0 80px;
   float: left;
 }
 
 .contacts-visit__title{
-  margin-top: 55px;
+  margin: 0;
+  padding-bottom: 10px;
 }
 
 .contacts-visit__text {
+  margin: 0;
   line-height: 1.75;
 }
 
@@ -180,13 +217,18 @@ header {
 
 .contacts-visit__visit {
   display: block;
-  margin-right: 80px;
+  padding: 55px 80px 38px 89px;
   width: 300px;
   float: right;
 }
 
+.contact-visit__form {
+  font-size: 0;
+}
+
 .form__input {
   box-sizing: border-box;
+  font-size: 16px;
   font-family: "PTSansNarrow", sans-serif;
   font-weight: bold;
   padding-left: 15px;
@@ -195,34 +237,31 @@ header {
   line-height: 36px;
   border: 2px solid black;
   background: none;
-  margin-right: 5px;
 }
 
-.form__input:nth-child(2) {
-  margin-right: 0;
-}
-
-.form__input:nth-child(4) {
-  margin-right: 0;
+.form__name,
+.form__date {
+  margin-right: 20px;
 }
 
 .form__text-block {
   display: table;
   width: 300px;
-  margin: 15px 0;
+  padding: 15px 0;
 }
 
 .form__text {
   display: table-cell;
+  font-size: 16px;
   padding-left: 20px;
   width: 150px;
 }
 
 .form__button {
-  margin-top: 15px;
+  margin-top: 20px;
   padding: 0;
-  width: 288px;
-  height: 45px;
+  width: 300px;
+  height: 42px;
   font-family: "PTSansNarrow", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
@@ -244,11 +283,12 @@ header {
 .footer__contacts {
   display: inline-block;
   width: 400px;
-
 }
 
 .footer__link {
   color: #fff;
+  text-decoration: none;
+  border-bottom: 2px solid #a6a6a6;
 }
 
 .footer__share {
@@ -266,7 +306,7 @@ header {
 
 .footer__share__box {
   width: 140px;
-  margin-left: -1px;
+  font-size: 0;
 }
 
 .footer__share-vk {
@@ -286,8 +326,9 @@ header {
 
 .soc-button {
   display: inline-block;
-  width: 41px;
-  height: 41px;
+  float: left;
+  width: 42px;
+  height: 42px;
   margin-right: 5px;
   background-color: black;
 }
@@ -309,4 +350,9 @@ header {
     content: "";
     display: table;
     clear: both;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }

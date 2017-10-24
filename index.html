@@ -11,9 +11,9 @@
 </head>
 <body>
   <header>
-    <div class="container clearfix">
+    <div class="container">
       <nav class="index-nav">
-        <ul class="menu">
+        <ul class="menu clearfix">
           <li class="menu__item">
             <a class="menu__link" href="#">Информация</a>
           </li>
@@ -29,60 +29,60 @@
           <li class="menu__item">
             <a class="menu__link" href="#">Контакты</a>
           </li>
+          <li class="menu__item menu__item--login">
+            <a class= "menu__link"href="#">Вход</a>
+          </li>
         </ul>
-        <div class="login">
-          <img class="login__img" src="img/index_login.png" alt="login_icon">
-          <a class= "login__link"href="#">Вход</a>
-        </div>
       </nav>
     </div>
   </header>
   <section class="bg-section">
-    <section class="first-section">
+    <section class="advantages">
       <div class="container">
-        <img class="first-section__logo" src="img/index-logo.png" alt="index logo">
+        <div class="advantages__logo"></div>
       </div>
       <div class="container">
-          <div class="first-section__item">
-            <h1 class="first-section__title">Быстро</h1>
-            <img class="first-section__pic" src="img/index__shape.png" alt="item image">
-            <p class="first-section__text">Мы делаем свою работу быстро! Два часа пролетят незаметнои вы - счастливый обладатель стильной стрижки-минутки</p>
+          <div class="advantages__item">
+            <h1 class="advantages__title">Быстро</h1>
+            <p class="advantages__text">Мы делаем свою работу быстро! Два часа пролетят незаметнои вы - счастливый обладатель стильной стрижки-минутки</p>
           </div>
-          <div class="first-section__item">
-            <h1 class="first-section__title">Круто</h1>
-            <img class="first-section__pic" src="img/index__shape.png" alt="item image">
-            <p class="first-section__text">Забудьте, как вы стриглись раньше. Мы сделаем из вас звузду футбола или кино! Во всяком случае внешне!</p>
+          <div class="advantages__item">
+            <h1 class="advantages__title">Круто</h1>
+            <p class="advantages__text">Забудьте, как вы стриглись раньше. Мы сделаем из вас звузду футбола или кино! Во всяком случае внешне!</p>
           </div>
-          <div class="first-section__item">
-            <h1 class="first-section__title">Дорого</h1>
-            <img class="first-section__pic" src="img/index__shape.png" alt="item image">
-            <p class="first-section__text">Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
+          <div class="advantages__item">
+            <h1 class="advantages__title">Дорого</h1>
+            <p class="v__text">Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
         </div>
       </div>
     </section>
     <section class="second-section">
-      <div class="container clearfix">
-        <div class="news-photo">
+      <div class="container">
+        <div class="news-photo clearfix">
           <div class="news-photo__news">
             <h1 class="news-photo__title">Новости</h1>
             <p class="news-photo__text">Нам наконец-то завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
             <p class="news-photo__date">11 января</p>
             <p class="news-photo__text">В нашей команде пополнение, Борис &laquo;бритва&raquo; Стригунец, обладатель множества титулов и наград пополни наши стройные ряды</p>
             <p class="news-photo__date">18 января</p>
-            <a href="#" class="news-photo__button">Все новости</a>
+            <div class="news-photo__news__buttons">
+              <a href="#" class="button--standard">Все новости</a>
+            </div>
           </div>
           <div class="news-photo__photo">
             <h1 class="news-photo__title">Фотогалерея</h1>
             <img src="img/news-photo.jpeg" alt="Photogallery" class="news-photo__img">
-            <a href="#" class="news-photo__button">Назад</a>
-            <a href="#" class="news-photo__button">Вперед</a>
+            <div class="news-photo__photo__buttons">
+              <a href="#" class="button--standard">Назад</a>
+              <a href="#" class="button--standard">Вперед</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section class="third-section">
-      <div class="container clearfix">
-        <div class="contacts-visit">
+      <div class="container">
+        <div class="contacts-visit clearfix">
           <div class="contacts-visit__contacts">
             <h1 class="contacts-visit__title">Контактная информация</h1>
             <div class="contacts-visit__adress">
@@ -91,8 +91,10 @@
             <div class="contacts-visit__time">
               <p class="contacts-visit__text">Время работы:<br>ПН-ПТ: с 10:00 до 22:00<br>СБ-ВС: с 10:00 до 19:00</p>
             </div>
-            <a href="#" class="contacts-visit__button">Как проехать</a>
-            <a href="#" class="contacts-visit__button">ОБратная связь</a>
+            <div class="contacts-visit__buttons">
+              <a href="#" class="button--standard">Как проехать</a>
+              <a href="#" class="button--standard">ОБратная связь</a>
+            </div>
           </div>
           <div class="contacts-visit__visit">
             <h1 class="contacts-visit__title">Записаться</h1>
