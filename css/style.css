@@ -7,6 +7,14 @@ body {
   background-color: black;
 }
 
+input {
+  font-family: "PTSansNarrow", sans-serif;
+  border-radius: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
 .container {
   padding: 0;
   width: 940px;
@@ -31,22 +39,6 @@ body {
 .menu__item{
   float: left;
   display: block;
-  vertical-align: middle;
-}
-
-.menu__link {
-  text-decoration: none;
-  font-size: 16px;
-  color: white;
-  padding: 25px 20px;
-}
-
-.menu__link:hover {
-  background-color: #242424;
-}
-
-.login__button {
-  padding-left: 40px;
 }
 
 .menu__item--login {
@@ -56,13 +48,28 @@ body {
 
 .menu__item--login::before {
   content: "";
-  display: inline-block;
   width: 14px;
   height: 14px;
   background: url("../img/index_login.png") no-repeat;
   position: absolute;
   left: 14px;
   top: 2px;
+}
+
+.menu__link {
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  padding: 25px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.menu__link:hover {
+  background-color: #242424;
+}
+
+.login__button {
+  padding-left: 40px;
 }
 
 .bg-section {
@@ -102,28 +109,23 @@ body {
 
 .advantages__text {
   line-height: 1.75;
-  padding: 20px 10px 0 10px;
-  font-size: 14px;
   margin: 0;
+  margin-top: 20px;
+  padding: 0 10px;
+  font-size: 14px;
 }
 
 .news-photo {
-  display: block;
-  margin-top: 70px;
-  width: 940px;
-  height: 420px;
-  background: url("../img/separator.png") no-repeat center,
-  url("../img/s-sector.jpeg");
+  margin-top: 55px;
 }
 
 .news-photo__news {
-  padding: 55px 40px 0 80px;
   float: left;
 }
 
 .news-photo__title {
   margin: 0;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
   font-size: 30px;
 }
 
@@ -136,18 +138,17 @@ body {
 
 .news-photo__date {
   margin: 0;
-  padding: 5px 0 24px;
+  margin: 5px 0 24px;
   font-size: 14px;
   text-transform: lowercase;
 }
 
 .news-photo__date:nth-child(2) {
-  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .news-photo__photo {
   float: right;
-  padding:55px 80px 0 72px;
 }
 
 .news-photo__img {
@@ -158,7 +159,7 @@ body {
   margin-bottom: 38px;
 }
 
-.button--standard {
+.button {
   display: inline-block;
   width: 140px;
   line-height: 42px;
@@ -167,41 +168,49 @@ body {
   font-size: 14px;
   color: #fff;
   background: black;
+  transition: background-color 0.3s ease;
 }
 
-.news-photo__news__buttons {
-  padding-top: 7px;
+.news-photo__news-button {
+  margin-top: 30px;
 }
 
-.news-photo__photo__buttons {
+.news-photo__photo-buttons {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
   font-size: 0;
 }
 
 .contacts-visit__buttons {
-  padding-top: 28px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin-top: 26px;
   font-size: 0;
 }
 
-.button--standard:nth-child(odd) {
-  margin-right: 20px;
-}
-
-.contacts-visit {
+.white-box {
   display: block;
-  margin-top: 35px;
-  width: 940px;
+  padding: 50px 80px;
   background: url("../img/separator2.png") no-repeat center,
   url("../img/sector3.png");
 }
 
+.contacts-visit {
+  margin-top: 35px;
+}
+
 .contacts-visit__contacts {
-  padding: 55px 57px 0 80px;
   float: left;
 }
 
 .contacts-visit__title{
   margin: 0;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .contacts-visit__text {
@@ -209,27 +218,19 @@ body {
   line-height: 1.75;
 }
 
-.contacts-visit__button {
-  display: inline-block;
-  width: 140px;
-  line-height: 40px;
-  text-decoration: none;
-  text-align: center;
-  font-size: 14px;
-  color: #fff;
-  background: black;
-  margin: 10px 20px 0 0;
-}
-
 .contacts-visit__visit {
   display: block;
-  padding: 55px 80px 38px 89px;
   width: 300px;
   float: right;
 }
 
-.contact-visit__form {
+.contacts-visit__form {
   font-size: 0;
+}
+
+.form__input-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .form__input {
@@ -243,17 +244,13 @@ body {
   line-height: 36px;
   border: 2px solid black;
   background: none;
-}
-
-.form__name,
-.form__date {
-  margin-right: 20px;
+  transition: background-color 0.3s ease;
 }
 
 .form__text-block {
   display: table;
   width: 300px;
-  padding: 15px 0;
+  margin: 15px 0;
 }
 
 .form__text {
@@ -264,18 +261,10 @@ body {
 }
 
 .form__button {
+  width: 100%;
   margin-top: 20px;
-  padding: 0;
-  width: 300px;
-  height: 42px;
-  font-family: "PTSansNarrow", sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 14px;
-  color: #fff;
-  background-color: black;
-  border: none;
-  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease;
 }
 
 .footer {
@@ -298,7 +287,7 @@ body {
   border-bottom: 2px solid #a6a6a6;
 }
 
-.footer__share {
+.footer__social {
   display: inline-block;
   width: 140px;
   vertical-align: top;
@@ -311,37 +300,39 @@ body {
   text-align: center;
 }
 
-.footer__share__box {
+.footer__social-box {
   width: 140px;
   font-size: 0;
 }
 
-.footer__share-vk {
-  background: url("../img/vk.png") no-repeat;
-  background-position: 50% 50%;
-}
-
-.footer__share-fb {
-  background: url("../img/facebook.png") no-repeat;
-  background-position: 50% 50%;
-}
-
-.footer__share-inst {
-  background: url("../img/instagram.png") no-repeat;
-  background-position: 50% 50%;
-}
-
 .soc-button {
   display: inline-block;
-  float: left;
   width: 42px;
   height: 42px;
-  margin-right: 5px;
   background-color: black;
+  margin-right: 5px;
+  transition: background-color 0.3s ease;
 }
 
-.button--standard:hover,
-.form__button:hover,
+.soc-button--vk {
+  background-image: url("../img/vk.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.soc-button--fb {
+  background-image: url("../img/facebook.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.soc-button--inst {
+  background-image: url("../img/instagram.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.button:hover,
 .soc-button:hover {
   background-color: #663d15;
 }

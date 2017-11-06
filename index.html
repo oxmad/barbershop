@@ -52,29 +52,29 @@
           </div>
           <div class="advantages__item">
             <h1 class="advantages__title">Дорого</h1>
-            <p class="v__text">Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
+            <p class="advantages__text">Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
         </div>
       </div>
     </section>
     <section class="second-section">
       <div class="container">
-        <div class="news-photo clearfix">
+        <div class="white-box news-photo clearfix">
           <div class="news-photo__news">
             <h1 class="news-photo__title">Новости</h1>
             <p class="news-photo__text">Нам наконец-то завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
             <p class="news-photo__date">11 января</p>
             <p class="news-photo__text">В нашей команде пополнение, Борис &laquo;бритва&raquo; Стригунец, обладатель множества титулов и наград пополни наши стройные ряды</p>
             <p class="news-photo__date">18 января</p>
-            <div class="news-photo__news__buttons">
-              <a href="#" class="button--standard">Все новости</a>
+            <div class="news-photo__news-button">
+              <a href="#" class="button">Все новости</a>
             </div>
           </div>
           <div class="news-photo__photo">
             <h1 class="news-photo__title">Фотогалерея</h1>
             <img src="img/news-photo.jpeg" alt="Photogallery" class="news-photo__img">
-            <div class="news-photo__photo__buttons">
-              <a href="#" class="button--standard">Назад</a>
-              <a href="#" class="button--standard">Вперед</a>
+            <div class="news-photo__photo-buttons">
+              <a href="#" class="button">Назад</a>
+              <a href="#" class="button">Вперед</a>
             </div>
           </div>
         </div>
@@ -82,7 +82,7 @@
     </section>
     <section class="third-section">
       <div class="container">
-        <div class="contacts-visit clearfix">
+        <div class="white-box contacts-visit clearfix">
           <div class="contacts-visit__contacts">
             <h1 class="contacts-visit__title">Контактная информация</h1>
             <div class="contacts-visit__adress">
@@ -92,35 +92,31 @@
               <p class="contacts-visit__text">Время работы:<br>ПН-ПТ: с 10:00 до 22:00<br>СБ-ВС: с 10:00 до 19:00</p>
             </div>
             <div class="contacts-visit__buttons">
-              <a href="#" class="button--standard">Как проехать</a>
-              <a href="#" class="button--standard">ОБратная связь</a>
+              <a href="#" class="button">Как проехать</a>
+              <a href="#" class="button">ОБратная связь</a>
             </div>
           </div>
           <div class="contacts-visit__visit">
             <h1 class="contacts-visit__title">Записаться</h1>
             <p class="contacts-visit__text">Укажите жеаемую дату и время, и мы свяжемся с вами для подтверждения брони</p>
-            <form action="#" class="contact-visit__form">
+            <form action="#" class="contacts-visit__form">
               <div class="form__text-block">
-                <p class="form__text">Дата</p>
-                <p class="form__text">Время</p>
+                <label for="date" class="form__text">Дата</label>
+                <label for="time" class="form__text">Время</label>
               </div>
-              <label for="#" class="form__date">
-                <input type="date" class="form__input" placeholder="08.10.2017">
-              </label>
-              <label for="#" class="form__time">
-                <input type="time" class="form__input" placeholder="10:00">
-              </label>
+              <div class="form__input-wrapper">
+                <input id="date" type="date" class="form__input form__input--date" placeholder="08.10.2017">
+                <input id="time" type="time" class="form__input" placeholder="10:00">
+              </div>
               <div class="form__text-block">
-                <p class="form__text">Ваше имя</p>
-                <p class="form__text">Телефон</p>
+                <label for="name" class="form__text">Ваше имя</label>
+                <label for="tel" class="form__text">Телефон</label>
               </div>
-              <label for="#" class="form__name">
-                <input type="text" class="form__input" placeholder="Борода">
-              </label>
-              <label for="#" class="form__phone">
-                <input type="tel" class="form__input" placeholder="+7 123 456-78-90">
-              </label>
-              <input type="submit" value="Отправить" class="form__button">
+              <div class="form__input-wrapper">
+                <input id="name" type="text" class="form__input form__input--name" placeholder="Борода">
+                <input id="tel" type="tel" class="form__input" placeholder="+7 123 456-78-90">
+              </div>
+              <input type="submit" value="Отправить" class="button form__button">
             </form>
           </div>
         </div>
@@ -136,17 +132,17 @@
             <a href="#" class="footer__link">Как нас найти?</a>
             <p class="footer__text">Телефон:+7 (495) 666-02-66</p>
           </div>
-          <div class="footer__share">
+          <div class="footer__social">
             <p class="footer__text">Давайте дружить!</p>
-            <div class="footer__share__box">
-              <a href="#" class="soc-button footer__share-vk"></a>
-              <a href="#" class="soc-button footer__share-fb"></a>
-              <a href="#" class="soc-button footer__share-inst"></a>
+            <div class="footer__social-box">
+              <a href="#" class="soc-button soc-button--vk"></a>
+              <a href="#" class="soc-button soc-button--fb"></a>
+              <a href="#" class="soc-button soc-button--inst"></a>
             </div>
           </div>
           <div class="footer__dev">
             <p class="footer__text">Разработано</p>
-            <a href="#" class="button--standard">htmlacademy</a>
+            <a href="#" class="button">htmlacademy</a>
           </div>
       </div>
     </div>
