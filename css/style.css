@@ -1,4 +1,6 @@
 body {
+  display: flex;
+  flex-direction: column;
   font-family: "PTSansNarrow", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
@@ -50,7 +52,7 @@ input {
   content: "";
   width: 14px;
   height: 14px;
-  background: url("../img/index_login.png") no-repeat;
+  background: url("../img/index-login.png") no-repeat;
   position: absolute;
   left: 14px;
   top: 2px;
@@ -73,10 +75,9 @@ input {
 }
 
 .bg-section {
-  display: block;
-  height: 1490px;
-  background: url("../img/index_bg.jpeg") no-repeat center top;
-  background-size: auto;
+  flex-grow: 1;
+  background: url("../img/index-bg.jpeg") no-repeat center top;
+  background-size: фгещauto;
 }
 
 .advantages {
@@ -103,7 +104,7 @@ input {
   margin: 0;
   font-size: 30px;
   padding-bottom: 50px;
-  background: url("../img/index__shape.png") no-repeat;
+  background: url("../img/index-shape.png") no-repeat;
   background-position: center 50px;
 }
 
@@ -149,6 +150,7 @@ input {
 
 .news-photo__photo {
   float: right;
+  width: 300px;
 }
 
 .news-photo__img {
@@ -202,6 +204,7 @@ input {
 
 .contacts-visit {
   margin-top: 35px;
+  margin-bottom: 64px;
 }
 
 .contacts-visit__contacts {
@@ -247,6 +250,10 @@ input {
   transition: background-color 0.3s ease;
 }
 
+.form__input--name {
+  text-transform: capitalize;
+}
+
 .form__text-block {
   display: table;
   width: 300px;
@@ -264,6 +271,7 @@ input {
   width: 100%;
   margin-top: 20px;
   outline: none;
+  border: none;
   transition: background-color 0.3s ease;
 }
 
@@ -272,7 +280,7 @@ input {
   height: 130px;
   width: auto;
   line-height: 8px;
-  background: url("../img/footer_bg.jpeg");
+  background: url("../img/footer-bg.jpeg");
   color: #fff;
 }
 
