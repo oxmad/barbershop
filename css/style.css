@@ -163,6 +163,7 @@ input {
 
 .button {
   display: inline-block;
+  cursor: pointer;
   width: 140px;
   line-height: 42px;
   text-decoration: none;
@@ -183,6 +184,14 @@ input {
   display: flex;
   justify-content: space-between;
   font-size: 0;
+}
+
+.btn-prev::before {
+  content:"Назад";
+}
+
+.btn-next::before {
+  content: "Вперед";
 }
 
 .contacts-visit__buttons {
